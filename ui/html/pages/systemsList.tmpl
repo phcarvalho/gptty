@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  {{if .}}
+  <ul>
+    {{range .}}
+    <li><a href="/systems/{{.ID}}">{{.Name}} - {{.CreatedAt}}</a></li>
+    {{end}}
+  </ul>
+  {{else}}
+  <p>No systems available yet...</p>
+  {{end}}
+</body>
+</html>
